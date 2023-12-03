@@ -18,6 +18,19 @@ export default {
       fontFamily: {
         outfit: ["Outfit"],
       },
+      keyframes:{
+        move_ltr:{
+          "0%":{
+            transform: "translateX(-100%)",
+          },
+          "100%":{
+            transform: "translateX(100%)",
+          }
+        }
+      },
+      animation:{
+        "transX":"move_ltr 15000ms linear infinite"
+      }
     },
   },
   plugins: [],
