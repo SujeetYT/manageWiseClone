@@ -13,6 +13,7 @@ export default {
         black: "#1c1c1c",
         purple: "#8247ff",
         grey: "#ededfa",
+        orange: '#fe8162',
       },
       fontFamily: {
         outfit: ["Outfit"],

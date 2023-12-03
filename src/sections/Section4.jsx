@@ -4,7 +4,7 @@ import connectAnApp from '../assets/integrations/connectAnApp.png'
 
 const Section4 = () => {
   return (
-    <div id='section4' className='bg-black md:px-[150px] lg:px-[250px] pt-8 flex flex-col justify-center items-center'>
+    <div id='section4' className='bg-black px-[10px] md:px-[150px] lg:px-[250px] pt-8 flex flex-col justify-center items-center'>
       <SectionName name='🛠 INTEGRATIONS' align={"center"} />
       <div className='text-center mt-4 flex flex-col justify-center items-center'>
         <h1 className='font-outfit text-[36px] md:text-[45px] font-medium leading-none text-[#fdf2ec]'>
