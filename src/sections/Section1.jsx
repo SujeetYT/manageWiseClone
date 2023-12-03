@@ -11,7 +11,7 @@ const Section1 = () => {
       className='min-h-[130vh] bg-gradient-to-b from-[#fdf2ec] to-[#fff] '
     >
       <NavbarComponent />
-      <SectionName name='👋 WELCOME TO MANAGE WISE!' />
+      <SectionName name='👋 WELCOME TO MANAGE WISE!' align={"center"}/>
       <div className='text-center mt-2 px-[10%]'>
         <h1 className='font-outfit text-[54px] md:text-[68px] lg:text-[82px] font-medium leading-none'>
           {"Empower your business with "}

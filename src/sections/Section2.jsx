@@ -10,7 +10,7 @@ import analytics from '../assets/premierFeatures/analytics.png'
 const Section2 = () => {
   return (
     <div className='px-[10px] mt-16'>
-      <SectionName name='🔥 PREMIER FEATURES' />
+      <SectionName name='🔥 PREMIER FEATURES' align={"center"}/>
       <div className='text-center mt-4 px-[10px]'>
         <h1 className='font-outfit text-[36px] md:text-[45px] font-medium leading-none'>
           {"Discover our product's "}
