@@ -1,13 +1,13 @@
 import React from 'react'
-import smartTaskManagement from '../assets/premierFeatures/smartTaskManagement.png'
 
-const Card = () => {
+const Card = ({image, heading, paragraph}) => {
   return (
-    <div className='bg-grey text-black rounded-3xl font-inter p-[30px]'>
-      <div>
-        <img src={smartTaskManagement} alt="Smart Task Management" />
+    <div className='text-black rounded-3xl font-inter border-x-[1px] max-w-[50%]'>
+      <img src={image} alt="Smart Task Management" width="100%"/>
+      <div className='p-[30px]'>
+        <p className='font-semibold text-2xl mt-2'>{heading}</p>
+        <p className='font-medium  mt-2'>{paragraph}</p>
       </div>
-      <p className='font-semibold text-3xl mt-2'>Boost productivity and streamline workflow with us. Enjoy our intuitive interface and robust features.</p>
     </div>
   )
 }
