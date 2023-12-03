@@ -8,7 +8,7 @@ import DarkCard from '../components/DarkCard'
 
 const Section3 = () => {
   return (
-    <div id='section3' className='mt-16 bg-black px-[150px] pt-8'>
+    <div id='section3' className='mt-16 bg-black md:px-[150px] pt-8'>
       <SectionName name='🤩 AND MORE...' align={""} />
       <div className='text-start mt-4'>
         <h1 className='font-outfit text-[36px] md:text-[45px] font-medium leading-none text-[#fdf2ec]'>
