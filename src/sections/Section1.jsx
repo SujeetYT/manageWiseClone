@@ -8,7 +8,7 @@ const Section1 = () => {
   return (
     <div
       id='section1'
-      className='min-h-[130vh] bg-gradient-to-b from-[#fdf2ec] to-[#fff] '
+      className='bg-gradient-to-b from-[#fdf2ec] to-[#fff] '
     >
       <NavbarComponent />
       <SectionName name='👋 WELCOME TO MANAGE WISE!' align={"center"}/>

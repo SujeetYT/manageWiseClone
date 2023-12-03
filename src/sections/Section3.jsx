@@ -8,7 +8,7 @@ import DarkCard from '../components/DarkCard'
 
 const Section3 = () => {
   return (
-    <div className='mt-16 bg-black px-[150px] pt-8'>
+    <div id='section3' className='mt-16 bg-black px-[150px] pt-8'>
       <SectionName name='🤩 AND MORE...' align={""} />
       <div className='text-start mt-4'>
         <h1 className='font-outfit text-[36px] md:text-[45px] font-medium leading-none text-[#fdf2ec]'>
@@ -22,7 +22,7 @@ const Section3 = () => {
           Discover the tools that will revolutionize the way you manage and optimize your operations
         </p>
       </div>
-      <div className='md:flex gap-5 mt-[60px]'>
+      <div className='flex flex-col md:flex-row justify-center items-center gap-5 mt-[60px]'>
         <DarkCard 
           image={phone}
           heading={"Cross-Platform Compatibility"}

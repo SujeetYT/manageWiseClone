@@ -9,7 +9,7 @@ import analytics from '../assets/premierFeatures/analytics.png'
 
 const Section2 = () => {
   return (
-    <div className='px-[10px] mt-16'>
+    <div id='section2' className='px-[10px] mt-16'>
       <SectionName name='🔥 PREMIER FEATURES' align={"center"}/>
       <div className='text-center mt-4 px-[10px]'>
         <h1 className='font-outfit text-[36px] md:text-[45px] font-medium leading-none'>
@@ -22,7 +22,7 @@ const Section2 = () => {
           Don't settle for mediocrity - embrace the future of management with Manage Wise.
         </p>
       </div>
-      <div className='mt-[70px] gap-10 md:flex px-[10%]'>
+      <div className='mt-[70px] gap-10 flex flex-col md:flex-row justify-center items-center px-[10%]'>
         <Quote />
         <Card 
           image={smartTaskManagement} 
@@ -30,7 +30,7 @@ const Section2 = () => {
           paragraph={"Say goodbye to chaos with our smart task management system"}
         />
       </div>
-      <div className='md:flex gap-5 mt-[60px] px-[10%]'>
+      <div className='flex flex-col md:flex-row gap-5 justify-center items-center mt-[60px] px-[10%]'>
         <Card 
           image={flexibleScheduling} 
           heading={"Flexible Scheduling"}
