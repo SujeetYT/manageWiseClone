@@ -9,3 +9,32 @@
   align-items: center;
   justify-content: center;
 }
+
+.PopOverClassForPseudoElement::before{
+  content: '';
+  position: absolute;
+  left: 90px;
+  top: 38px;
+  border-radius: 20%;
+  transform: rotate(224deg);
+  width: 15px;
+  height: 15px;
+  border-top: 2px solid #e5e7eb;
+  border-left: 2px solid #e5e7eb;
+  background: #fff;
+}
+
+.FadingEdgesPseudoElement::before{
+  content: '';
+  position: absolute;
+  left: 90px;
+  top: 38px;
+  border-radius: 20%;
+  transform: rotate(224deg);
+  width: 15px;
+  height: 15px;
+  border-top: 2px solid #e5e7eb;
+  border-left: 2px solid #e5e7eb;
+  background: #fff;
+  animation: fadingEdges 1s infinite;
+}

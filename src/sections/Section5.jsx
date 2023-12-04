@@ -1,6 +1,6 @@
 import React from 'react'
 import SectionName from '../components/SectionName'
-import { Accordion } from 'keep-react'
+import Accordion from '../components/Accordion'
 
 const Section5 = () => {
   const faqs = [
@@ -26,37 +26,30 @@ const Section5 = () => {
     }
   ];
 
+
   return (
     <div id='section5' className='mt-16 px-[10px] md:px-[150px] pt-8 w-[100%]'>
       <SectionName name='🙋‍♀️ FAQ' align={""} />
-      <div className='text-start mt-4 px-[10px]'>
-        <h1 className='font-outfit text-[36px] md:text-[45px] font-medium leading-none'>
-          {"Need"}
-          <p className='text-[#fe8162]'>Answers</p>
-        </h1>
-        <p
-          className='text-[#6c757d] mt-10 font-outfit text-[18px] md:text-[20px] lg:text-[22px] font-medium leading-tight px-[2px] md:w-[576px]'
-        >
-          Check out our most commonly asked questions below to find the information you need.
-        </p>
+      <div className='flex flex-col md:flex-row justify-between items-start'>
+        <div className='text-start mt-4 px-[10px]'>
+          <h1 className='font-outfit text-[36px] md:text-[45px] font-medium leading-none'>
+            {"Need"}
+            <p className='text-[#fe8162]'>Answers</p>
+          </h1>
+          <p
+            className='text-[#6c757d] mt-10 font-outfit text-[18px] md:text-[20px] lg:text-[22px] font-medium leading-tight px-[2px] max-w-[576px]'
+          >
+            Check out our most commonly asked questions below to find the information you need.
+          </p>
+        </div>
+        <div className='mt-10 md:mt-0'>
+          {
+            faqs.map((faq, index) => (
+              <Accordion key={index} heading={faq.title} description={faq.content} />
+            ))
+          }
+        </div>
       </div>
-      <div className='mt-10'>
-        <Accordion collapseAll={true}>
-          {faqs.map((faq, index) => (
-            <Accordion.Panel key={index}>
-              <Accordion.Title>
-                {faq.title}
-              </Accordion.Title>
-              <Accordion.Content>
-                <p>
-                  {faq.content}
-                </p>
-              </Accordion.Content>
-            </Accordion.Panel>
-          ))}
-        </Accordion>
-      </div>
-
     </div>
   )
 }

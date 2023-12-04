@@ -2,7 +2,7 @@ import React from 'react'
 
 const DarkCard = ({ image, heading, paragraph }) => {
   return (
-    <div className=' bg-[#212121] rounded-3xl font-inter border-[#ffffff08] border-x-[1px] md:w-[50%] flex flex-col justify-center items-center px-[30px] pt-[50px] pb-[60px]'>
+    <div className='bg-[#212121] rounded-3xl font-inter border-[#ffffff08] border-x-[1px] md:w-[50%] flex flex-col justify-center items-center px-[30px] pt-[50px] pb-[60px] max-w-[300px]'>
       <div className='w-[50px] h-[50px] p-2 bg-purple rounded-2xl'>
         <img 
           src={image} 

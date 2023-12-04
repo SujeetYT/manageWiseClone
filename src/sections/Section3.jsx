@@ -8,16 +8,16 @@ import DarkCard from '../components/DarkCard'
 
 const Section3 = () => {
   return (
-    <div id='section3' className='mt-16 bg-black md:px-[150px] pt-8'>
+    <div id='section3' className='mt-16 bg-black px-[10px] md:px-[150px] pt-8 w-[100%]'>
       <SectionName name='🤩 AND MORE...' align={""} />
       <div className='text-start mt-4'>
-        <h1 className='font-outfit text-[36px] md:text-[45px] font-medium leading-none text-[#fdf2ec]'>
+        <h1 className='font-outfit text-[30px] md:text-[36px] lg:text-[45px] font-medium leading-none text-[#fdf2ec]'>
           {"Explore an array of features that elevate your "}
           <span className='text-[#fe8162]'>Productivity</span>
           {" to new heights"}
         </h1>
         <p
-          className='text-[#6c757d] mt-6 font-outfit text-[18px] md:text-[20px] lg:text-[22px] font-medium leading-tight w-[576px]'
+          className='text-[#6c757d] mt-6 font-outfit text-[18px] md:text-[20px] lg:text-[22px] font-medium leading-tight max-w-[576px]'
         >
           Discover the tools that will revolutionize the way you manage and optimize your operations
         </p>
